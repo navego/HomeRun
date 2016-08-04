@@ -23,5 +23,26 @@ class RolesSeeder extends Seeder {
 			'description' => 'Default system user.',
 			'removable' => false,
 		]);
+		
+		Role::create([
+			'name' => 'Manager',
+			'display_name' => 'מנהל חברה',
+			'description' => 'מנהל חברה',
+			'removable' => true,
+		]);
+		
+		Role::create([
+			'name' => 'Coordinator',
+			'display_name' => 'מתאם/ת',
+			'description' => 'מתאמ/ת',
+			'removable' => true,
+		]);
+		
+		Role::create([
+			'name' => 'Tenant',
+			'display_name' => 'דייר',
+			'description' => 'דייר',
+			'removable' => true,
+		]);
 	}
 }
