@@ -6,7 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ApartmentTypesSeeder' => $baseDir . '/database/seeds/ApartmentTypesSeeder.php',
+    'ApartmentsSeeder' => $baseDir . '/database/seeds/ApartmentsSeeder.php',
     'BaseListenerTestCase' => $baseDir . '/tests/functional/Listeners/BaseListenerTestCase.php',
+    'BuildingsSeeder' => $baseDir . '/database/seeds/BuildingsSeeder.php',
     'CharifyCountriesTable' => $baseDir . '/database/migrations/2016_03_16_072343_charify_countries_table.php',
     'CountriesSeeder' => $baseDir . '/database/seeds/CountriesSeeder.php',
     'CreateApartmentTypesTable' => $baseDir . '/database/migrations/2016_08_04_191548_create_apartment_types_table.php',
@@ -15,6 +18,7 @@ return array(
     'CreateBuildingsTable' => $baseDir . '/database/migrations/2016_08_04_185918_create_buildings_table.php',
     'CreateCoordinatorsTable' => $baseDir . '/database/migrations/2016_08_04_185937_create_coordinators_table.php',
     'CreateFirmsTable' => $baseDir . '/database/migrations/2016_08_04_185740_create_firms_table.php',
+    'CreateInvitesTable' => $baseDir . '/database/migrations/2016_08_10_060025_create_invites_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProjectsTable' => $baseDir . '/database/migrations/2016_08_04_185751_create_projects_table.php',
     'CreateSessionsTable' => $baseDir . '/database/migrations/2016_03_16_083833_create_sessions_table.php',
@@ -498,6 +502,7 @@ return array(
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PermissionsSeeder' => $baseDir . '/database/seeds/PermissionsSeeder.php',
+    'ProjectsSeeder' => $baseDir . '/database/seeds/ProjectsSeeder.php',
     'RolesSeeder' => $baseDir . '/database/seeds/RolesSeeder.php',
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',

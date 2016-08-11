@@ -1,6 +1,41 @@
 <?php
 
 Route::group(['middleware' => 'web'], function () {
+	Route::get('/', function () {
+		return view('homerun.index');
+	})->name('home');
+	Route::get('/invite', [
+		'uses' => 'Homerun\InviteController@getSendInvite',
+		'as' => 'invite'
+	]);
+	Route::post('/invite', [
+		'uses' => 'Homerun\InviteController@postSendInvite',
+		'as' => 'invite'
+	]);
+	Route::get('/create_firm', [
+		'uses' => 'Homerun\FirmController@getCreateFirm',
+		'as' => 'firm.create'
+	]);
+	Route::post('/create_firm', [
+		'uses' => 'Homerun\FirmController@postCreateFirm',
+		'as' => 'firm.create'
+	]);
+	Route::get('/create_project', [
+		'uses' => 'Homerun\ProjectController@getCreateProject',
+		'as' => 'project.create'
+	]);
+	Route::post('/create_project', [
+		'uses' => 'Homerun\ProjectController@postCreateProject',
+		'as' => 'project.create'
+	]);
+	Route::get('/create_building', [
+		'uses' => 'Homerun\BuildingController@getCreateBuilding',
+		'as' => 'building.create'
+	]);
+	Route::post('/create_building', [
+		'uses' => 'Homerun\BuildingController@postCreateBuilding',
+		'as' => 'building.create'
+	]);
 	Route::get('login', 'Auth\AuthController@getLogin');
 	Route::post('login', 'Auth\AuthController@postLogin');
 
@@ -53,7 +88,9 @@ Route::group(['middleware' => 'web'], function () {
 Route::group(['middleware' => 'web'], function () {
 	Route::localizedGroup(function () {
 
-		Route::get('/', 'Frontend\HomeController@home')->name('frontend.index');
+		//Route::get('/', 'Frontend\HomeController@home')->name('frontend.index');
+		Route::get('/admin', 'Frontend\HomeController@home')->name('frontend.index');
+
 		Route::group(['namespace' => 'Dashboard', 'prefix' => 'dashboard'], function () {
 			Route::get('/', [
 				'as' => 'dashboard',

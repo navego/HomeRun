@@ -16,6 +16,13 @@ class CreateFirmsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
+            $table->string('city');
+            $table->string('street');
+            $table->string('street_num');
+            $table->string('po_box')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->integer('user_id');
         });
     }

@@ -405,7 +405,10 @@ class ComposerStaticInitf1f12173032c76f93b49cfe7dad00504
     );
 
     public static $classMap = array (
+        'ApartmentTypesSeeder' => __DIR__ . '/../..' . '/database/seeds/ApartmentTypesSeeder.php',
+        'ApartmentsSeeder' => __DIR__ . '/../..' . '/database/seeds/ApartmentsSeeder.php',
         'BaseListenerTestCase' => __DIR__ . '/../..' . '/tests/functional/Listeners/BaseListenerTestCase.php',
+        'BuildingsSeeder' => __DIR__ . '/../..' . '/database/seeds/BuildingsSeeder.php',
         'CharifyCountriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_03_16_072343_charify_countries_table.php',
         'CountriesSeeder' => __DIR__ . '/../..' . '/database/seeds/CountriesSeeder.php',
         'CreateApartmentTypesTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_04_191548_create_apartment_types_table.php',
@@ -414,6 +417,7 @@ class ComposerStaticInitf1f12173032c76f93b49cfe7dad00504
         'CreateBuildingsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_04_185918_create_buildings_table.php',
         'CreateCoordinatorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_04_185937_create_coordinators_table.php',
         'CreateFirmsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_04_185740_create_firms_table.php',
+        'CreateInvitesTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_10_060025_create_invites_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_04_185751_create_projects_table.php',
         'CreateSessionsTable' => __DIR__ . '/../..' . '/database/migrations/2016_03_16_083833_create_sessions_table.php',
@@ -897,6 +901,7 @@ class ComposerStaticInitf1f12173032c76f93b49cfe7dad00504
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PermissionsSeeder' => __DIR__ . '/../..' . '/database/seeds/PermissionsSeeder.php',
+        'ProjectsSeeder' => __DIR__ . '/../..' . '/database/seeds/ProjectsSeeder.php',
         'RolesSeeder' => __DIR__ . '/../..' . '/database/seeds/RolesSeeder.php',
         'SebastianBergmann\\Comparator\\ArrayComparator' => __DIR__ . '/..' . '/sebastian/comparator/src/ArrayComparator.php',
         'SebastianBergmann\\Comparator\\Comparator' => __DIR__ . '/..' . '/sebastian/comparator/src/Comparator.php',
